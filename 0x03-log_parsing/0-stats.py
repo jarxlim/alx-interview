@@ -8,7 +8,7 @@ def prints_info(_dict, size):
     print("File size: {:d}".format(size))
     for i in sorted(_dict.keys()):
         if _dict[i] != 0:
-            print("{}: {:d}".format(i, dic[i]))
+            print("{}: {:d}".format(i, _dict[i]))
 
 
 sts = {"200": 0, "301": 0, "400": 0, "401": 0, "403": 0,
