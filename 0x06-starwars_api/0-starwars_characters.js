@@ -10,6 +10,7 @@ request(url, async (err, res, body) => {
   err && console.log(err);
 
   const charactersArray = (JSON.parse(res.body).characters);
+
   for (const character of charactersArray) {
     await new Promise((resolve, reject) => {
       request(character, (err, res, body) => {
