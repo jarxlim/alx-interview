@@ -4,7 +4,7 @@
 """
 
 
-def island_pm(grid):
+def island_perimeter(grid):
     """island perimenter function"""
     perimeter = 0
     for i in range(len(grid)):
